@@ -7,79 +7,97 @@
 
   <body>
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
+    <div class="container">
+      <header class="main-header">
+        <a class="logo">
           <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип города Седона">
         </a>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="main-navigation">
+          <ul class="main-navigation-list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="container">
-      <h1 class="visually-hidden">Город Седона</h1>
-      <section class="Welcome-to-Sedona">
-        <h2 class="visually-hidden">Слоган</h2>
-        <img class="main-img" src="http://placehold.it/150x100" width="150" height="100" alt="Because the Grand Canyon sucks">
-        <p class="tagline">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-      </section>
-      <section class="features">
-        <h2 class="visually-hidden">Преимуществa</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <ul class="features-list">
-          <li class="feature-item">
-            <h3>Настоящий городок<br>№1<br></h3>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Настоящий городок">
-          </li>
-          <li class="feature-item">
-            <h3>Там есть мост дьявола<br>№2<br></h3>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
-          </li>
-          <li class="feature-item">
-            <h3>Небольшая площадь<br>№3<br></h3>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature-item">
-            <h3>Красивая дорога<br>№4<br></h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item">
-            <h3>Мало туристов<br>№5<br></h3>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section class="recomendation">
-        <h2 class="visually-hidden">Рекомендации</h2>
-        <ul class="recomendation-list">
-          <li class="recomendation-item motel-icon">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-          </li>
-          <li class="recomendation-item eat-icon">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="recomendation-item souvenir-icon">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-      </section>
-      <section class="hotel-search">
-        <h2>Заинтерисовались?</h2>
-        <div>Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в Седоне
+      <main>
+        <div class="promo">
+          <img class="main-img" src="http://placehold.it/150x100" width="150" height="100" alt="Because the Grand Canyon sucks">
         </div>
-        <a class="open-form" href="#">Поиск гостиницы в Седоне</a>
-        <form class="find-hotel-form"  method="get">
+        <section class="features">
+          <h1 class="main-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <div class="feature-item feature-item__wide">
+            <h2 class="features-title">Настоящий городок
+              <span class="features-num">&mdash;№1&mdash;</span>
+            </h2>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <div class="features-item-image">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Настоящий городок">
+            </div>
+          </div>
+          <div class="feature-item  feature-item__white">
+            <i class="motel-icon"></i>
+            <h2 class="features-title">Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+          </div>
+          <div class="feature-item feature-item__white">
+            <i class="eat-icon"></i>
+            <h2 class="features-title">Еда</h2>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="feature-item feature-item__white">
+            <i class="souvenir-icon"></i>
+            <h2 class="features-title">Сувениры</h2>
+            <p>Не только китайского, но и местного производства!</p>
+          </div>
+          <div class="feature-item feature-item__wide">
+            <h2 class="features-title">Там есть<br>
+              мост дьявола
+              <span class="features-num">&mdash;№2&mdash;</span>
+            </h2>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="features-item-image">
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
+            </div>
+          </div>
+          <div class="feature-item feature-item__gray">
+            <h2 class="features-title">Небольшая площадь
+              <span class="features-num">&mdash;№3&mdash;</span>
+            </h2>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="feature-item feature-item__gray">
+            <h2 class="features-title">Красивая дорога
+              <span class="features-num">&mdash;№4&mdash;</span>
+            </h2>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="feature-item feature-item__gray">
+            <h2 class="features-title">Мало туристов
+              <span class="features-num">&mdash;№5&mdash;</span>
+            </h2>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </section>
+
+        <section class="hotel-search">
+          <h2 class="hotel-search-title">Заинтерисовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
+
+        </section>
+      </main>
+
+      <footer class="main-footer">
+
+        <div class="map"></div>
+
+        <form class="search-hotel-form"  method="get">
           <div class="select-date">
             <label>Дата заезда:
               <input type="date" name="arrivaldate">
@@ -104,27 +122,22 @@
             <input type="number" id="kidsnumber" name="kidsnumber" value="0">
             <button class="button button-plus" type="button">+</button>
           </div>
-          <input class="button-find" type="submit" value="Найти">
+          <input class="btn search-btn" type="submit" value="Найти">
         </form>
-      </section>
 
-    </main>
+        <b class="footer-hashtag">#visitsedona</b>
+        <div class="social">
+          <a class="socail-btn socail-btn-twitter" href="#"></a>
+          <a class="socail-btn socail-btn-facebook" href="#"></a>
+          <a class="socail-btn socail-btn-youtube" href="#"></a>
+        </div>
+        <div class="copyright">
+          <span>Website by</span>
+          <a class="logo-academy" href="#">HTML Academy</a>
+        </div>
 
-    <footer class="main-footer">
-      <a class="footer-hashtag" href="#">#visitsedona</a>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button-twitter" href="#"></a></li>
-          <li><a class="social-button-facebook" href="#"></a></li>
-          <li><a class="social-button-youtube" href="#"></a></li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        <span>Website by</span>
-        <a class="button" href="#">HTML Academy</a>
-      </p>
-
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
 
