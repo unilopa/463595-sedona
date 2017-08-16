@@ -26,59 +26,53 @@
         <div class="promo">
           <img class="main-img" src="http://placehold.it/150x100" width="150" height="100" alt="Because the Grand Canyon sucks">
         </div>
+        <section class="promo-text">
+          <h1 class="promo-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="promo-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </section>
         <section class="features">
-          <h1 class="main-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-          <div class="feature-item feature-item__wide">
-            <h2 class="features-title">Настоящий городок
-              <span class="features-num">&mdash;№1&mdash;</span>
-            </h2>
+          <div class="feature-item">
+            <h2 class="features-title">Настоящий городок</h2>
+            <span class="features-num">&mdash;№1&mdash;</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             <div class="features-item-image">
               <img src="http://placehold.it/150x100" width="150" height="100" alt="Настоящий городок">
             </div>
           </div>
-          <div class="feature-item  feature-item__white">
-            <i class="motel-icon"></i>
-            <h2 class="features-title">Жилье</h2>
+          <div class="feature-item  feature-item-white">
+            <h2 class="features-title features-title-house">Жилье</h2>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
           </div>
-          <div class="feature-item feature-item__white">
-            <i class="eat-icon"></i>
-            <h2 class="features-title">Еда</h2>
+          <div class="feature-item feature-item-white">
+            <h2 class="features-title features-title-food">Еда</h2>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="feature-item feature-item__white">
-            <i class="souvenir-icon"></i>
-            <h2 class="features-title">Сувениры</h2>
+          <div class="feature-item feature-item-white">
+            <h2 class="features-title features-title-souvenir">Сувениры</h2>
             <p>Не только китайского, но и местного производства!</p>
           </div>
-          <div class="feature-item feature-item__wide">
+          <div class="feature-item">
             <h2 class="features-title">Там есть<br>
-              мост дьявола
-              <span class="features-num">&mdash;№2&mdash;</span>
-            </h2>
+              мост дьявола</h2>
+            <span class="features-num">&mdash;№2&mdash;</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             <div class="features-item-image">
               <img src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
             </div>
           </div>
-          <div class="feature-item feature-item__gray">
-            <h2 class="features-title">Небольшая площадь
-              <span class="features-num">&mdash;№3&mdash;</span>
-            </h2>
+          <div class="feature-item feature-item-gray">
+            <h2 class="features-title">Небольшая площадь</h2>
+            <span class="features-num">&mdash;№3&mdash;</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
-          <div class="feature-item feature-item__gray">
-            <h2 class="features-title">Красивая дорога
-              <span class="features-num">&mdash;№4&mdash;</span>
-            </h2>
+          <div class="feature-item feature-item-gray">
+            <h2 class="features-title">Красивая дорога</h2>
+            <span class="features-num">&mdash;№4&mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="feature-item feature-item__gray">
-            <h2 class="features-title">Мало туристов
-              <span class="features-num">&mdash;№5&mdash;</span>
-            </h2>
+          <div class="feature-item feature-item-gray">
+            <h2 class="features-title">Мало туристов</h2>
+            <span class="features-num">&mdash;№5&mdash;</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </section>
@@ -97,7 +91,7 @@
 
         <div class="map"></div>
 
-        <form class="search-hotel-form"  method="get">
+        <form class="search-hotel-form" method="get" action="https://echo.htmlacademy.ru/">
           <div class="select-date">
             <label>Дата заезда:
               <input type="date" name="arrivaldate">
@@ -122,20 +116,21 @@
             <input type="number" id="kidsnumber" name="kidsnumber" value="0">
             <button class="button button-plus" type="button">+</button>
           </div>
-          <input class="btn search-btn" type="submit" value="Найти">
+          <button class="btn search-btn" type="submit">Найти</button>
         </form>
 
-        <b class="footer-hashtag">#visitsedona</b>
-        <div class="social">
-          <a class="socail-btn socail-btn-twitter" href="#"></a>
-          <a class="socail-btn socail-btn-facebook" href="#"></a>
-          <a class="socail-btn socail-btn-youtube" href="#"></a>
+        <div class="footer-transparent">
+          <b class="footer-hashtag">#visitsedona</b>
+          <div class="social">
+            <a class="socail-btn socail-btn-twitter" href="#"></a>
+            <a class="socail-btn socail-btn-facebook" href="#"></a>
+            <a class="socail-btn socail-btn-youtube" href="#"></a>
+          </div>
+          <div class="copyright">
+            <span>Website by</span>
+            <a class="logo-academy" href="#">HTML Academy</a>
+          </div>
         </div>
-        <div class="copyright">
-          <span>Website by</span>
-          <a class="logo-academy" href="#">HTML Academy</a>
-        </div>
-
       </footer>
     </div>
   </body>
