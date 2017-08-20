@@ -1,0 +1,32 @@
+body {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: normal;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.promo-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.features-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.feature-item-white .features-title,
+.feature-item-gray .features-title {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
