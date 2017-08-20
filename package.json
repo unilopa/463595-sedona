@@ -1,0 +1,18 @@
+{
+  "name": "463595-sedona",
+  "version": "1.0.0",
+  "description": "* Студент: [POLINA BLOSHCHITCYNA](https://up.htmlacademy.ru/htmlcss/18/user/463595). * Наставник: `СЕРГЕЙ КРАВЧЕНКО`.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unilopa/463595-sedona.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unilopa/463595-sedona/issues"
+  },
+  "homepage": "https://github.com/unilopa/463595-sedona#readme",
+  "devDependencies": {
+    "stylelint-config-htmlacademy": "0.0.1"
+  }
+}
