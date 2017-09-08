@@ -18,8 +18,8 @@
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
+        <li class="main-navigation-list-media"><a href="#">Фото и видео</a></li>
+        <li class="main-navigation-list-map"><a href="#">Карта штата</a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
@@ -32,12 +32,12 @@
       </div>
     </div>
     <div class="promo-text">
-      <h1 class="promo-title">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+      <h1 class="promo-title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="promo-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </div>
 
     <section class="features">
-      <div class="features-item features-item-blue">
+      <div class="features-item">
         <h2 class="features-title features-title-white">Настоящий городок</h2>
         <span class="features-num features-num-white">&mdash;№1&mdash;</span>
         <p class="features-text features-text-white">Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -45,22 +45,22 @@
       <div class="features-image">
         <img src="img/features-photo-1.jpg" width="800" height="256" alt="Настоящий городок">
       </div>
-      <div class="features-item features-title-house">
-        <h2 class="features-title">Жилье</h2>
+      <div class="features-item features-item-white">
+        <h2 class="features-title features-title-house">Жилье</h2>
         <p class="features-text">Рекомендуем пожить в настоящем мотеле, все как в кино</p>
       </div>
-      <div class="features-item features-title-food">
-        <h2 class="features-title">Еда</h2>
+      <div class="features-item features-item-white">
+        <h2 class="features-title features-title-food">Еда</h2>
         <p class="features-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
       </div>
-      <div class="features-item features-title-souvenir">
-        <h2 class="features-title">Сувениры</h2>
+      <div class="features-item features-item-white">
+        <h2 class="features-title features-title-souvenir">Сувениры</h2>
         <p class="features-text">Не только китайского, но и местного производства!</p>
       </div>
       <div class="features-image">
         <img src="img/features-photo-2.jpg" width="800" height="256" alt="Мост дьявола">
       </div>
-      <div class="features-item features-item-blue">
+      <div class="features-item">
         <h2 class="features-title features-title-white">Там есть<br>
           мост дьявола</h2>
         <span class="features-num features-num-white">&mdash;№2&mdash;</span>
@@ -118,22 +118,26 @@
       <div class="number-wrapper">
         <div class="number">
           <label for="adultnumber">Взрослые:</label>
-          <button class="btn btn-minus" type="button">
+          <button class="btn-minus" type="button">
             <span class="visually-hidden">Минус</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><line x1="0" x2="12" y1="0" y2="0" stroke-width="4"/></svg>
           </button>
           <input type="text" id="adultnumber" name="adultnumber" value="2">
-          <button class="btn btn-plus" type="button">
+          <button class="btn-plus" type="button">
             <span class="visually-hidden">Плюс</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><line x1="0" x2="12" y1="6" y2="6" stroke-width="3"/><line x1="6" x2="6" y1="0" y2="12" stroke-width="3"/></svg>
           </button>
         </div>
         <div class="number">
           <label for="kidsnumber">Дети:</label>
-          <button class="btn btn-minus" type="button">
+          <button class="btn-minus" type="button">
             <span class="visually-hidden">Минус</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><line x1="0" x2="12" y1="0" y2="0" stroke-width="4"/></svg>
           </button>
           <input type="text" id="kidsnumber" name="kidsnumber" value="0">
-          <button class="btn btn-plus" type="button">
+          <button class="btn-plus" type="button">
             <span class="visually-hidden">Плюс</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><line x1="0" x2="12" y1="6" y2="6" stroke-width="3"/><line x1="6" x2="6" y1="0" y2="12" stroke-width="3"/></svg>
           </button>
         </div>
       </div>

@@ -18,8 +18,8 @@
     <nav class="main-navigation">
       <ul class="main-navigation-list">
         <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
+        <li  class="main-navigation-list-media"><a href="#">Фото и видео</a></li>
+        <li class="main-navigation-list-map"><a href="#">Карта штата</a></li>
         <li class="current">Гостиницы</li>
       </ul>
     </nav>
@@ -63,12 +63,10 @@
         <div class="range">
           <div class="range-fields">
             <div class="range-field">
-              <label class="range-field-min">От
-                <input type="text" name="field-from" value="0">
-              </label>
-              <label class="range-field-max">До
-                <input type="text" name="field-to" value="3000">
-              </label>
+              <label class="range-field-min">От</label>
+              <input type="text" name="field-from" value="0">
+              <label class="range-field-max">До</label>
+              <input type="text" name="field-to" value="3000">
             </div>
             <div class="range-controls">
               <button class="toggle min-toggle" type="button"><span class="visually-hidden">От</span></button>
