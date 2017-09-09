@@ -851,6 +851,7 @@ a {
   margin-top: 10px;
   padding-top: 4px;
   padding-bottom: 4px;
+  word-break: break-all;
 }
 
 .catalog-item-hotels {
