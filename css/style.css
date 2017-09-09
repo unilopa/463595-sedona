@@ -135,7 +135,7 @@ a {
 
 .promo-text {
   width: 510px;
-  padding: 58px 0 40px;
+  padding: 58px 0 35px;
   margin: 0 auto;
   text-align: center;
 }
@@ -157,6 +157,8 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
 }
 
 .features-item {
@@ -188,7 +190,6 @@ a {
 
 .features-item-white {
   background-color: inherit;
-  max-height: 333px;
 }
 
 .features-item-gray .features-title {
@@ -204,7 +205,8 @@ a {
 
 .features-title-white {
   color: #ffffff;
-  padding-top: 45px;
+  padding-top: 50px;
+  padding-bottom: 20px
 }
 
 .features-item-white .features-title {
@@ -234,13 +236,14 @@ a {
 }
 
 .features-item-white .features-text {
-  padding-bottom: 85px;
+  padding-bottom: 83px;
 }
 
 .features-text-white {
   color: #ffffff;
   padding-left: 12%;
   padding-right: 12%;
+  padding-bottom: 55px;
 }
 
 .features-item-gray .features-text {
@@ -293,6 +296,12 @@ a {
   margin-bottom: 26px;
 }
 
+.hotel-search {
+  z-index: 10;
+  position: relative;
+  background: #ffffff;
+}
+
 .hotel-search-title {
   font-size: 30px;
   line-height: 36px;
@@ -307,7 +316,9 @@ a {
   font-weight: normal;
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .map {
@@ -332,7 +343,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   width: 568px;
-  height: 88px;
+  height: 85px;
   border: none;
   background-color: #766357;
   display: block;
@@ -419,16 +430,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 33.3334%;
+  width: 33%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
 .social-btn {
-  margin: 6px;
+  margin: 4px;
   background-color: #81b3d2;
-  width: 46px;
+  width: 44px;
   height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,6 +532,13 @@ a {
   transform: scale(1);
 }
 
+[type="checkbox"]:checked + label::before {
+  opacity: 0;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
 .btn {
   background-color: #a9a9a9;
   text-transform: uppercase;
@@ -578,6 +596,8 @@ a {
   align-items: center;
 }
 
+
+
 .range-field::after {
   content: "";
   position: absolute;
@@ -593,15 +613,13 @@ a {
 
 .range-field label {
   padding-left: 20%;
-  padding-right: 5px;
   font-size: 14px;
   line-height: 21px;
-  vertical-align: bottom;
   cursor: pointer;
 }
 
 .range-field input {
-  width: 20%;
+  width: 40%;
   margin: 0;
   padding: 5px 0;
   font: inherit;
@@ -787,6 +805,7 @@ a {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
+  max-width: 30%;
 }
 
 .catalog-item-actions h2 {
@@ -889,16 +908,36 @@ a {
 .search-hotel-form {
   background-color: #ffffff;
   position: absolute;
-  bottom: 195px;
-  left: 315px;
+  bottom: 200px;
   padding: 56px 56px 0;
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-open {
+  display: block;
+  z-index: 1;
+  animation: search-open-animation 1s;
+}
+
+@keyframes search-open-animation {
+  0% {
+    transform: translateX(-50%) translateY(-100%);
+    display: none;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(0%);
+    display: block;
+  }
 }
 
 .select-date {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -920,7 +959,6 @@ a {
 
 .select-date input:hover {
   background-color: #ebebeb;
-  border: 2px solid #ebebeb;
 }
 
 .select-date input:focus {
@@ -964,7 +1002,7 @@ a {
   height: 58px;
   background-color: #81b3d2;
   margin-top: 30px;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .submit:hover,
@@ -986,10 +1024,13 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .number input {
   width: 38px;
+  box-sizing: border-box;
+  min-height: 36px;
   text-align: center;
   background-color: #f2f2f2;
   cursor: pointer;
@@ -1006,6 +1047,7 @@ a {
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+  height: 36px;
 }
 
 .btn-minus,
