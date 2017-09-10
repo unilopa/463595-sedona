@@ -493,7 +493,6 @@ a {
 [type="checkbox"]:checked + label {
   position: relative;
   padding-left: 40px;
-  p
   cursor: pointer;
 }
 
