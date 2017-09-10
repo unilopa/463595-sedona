@@ -860,7 +860,7 @@ a {
   margin-top: 14px;
   padding-top: 5px;
   padding-bottom: 4px;
-  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .catalog-item-hotels {
@@ -880,7 +880,8 @@ a {
 
 .catalog-item-star {
   display: inline-block;
-  margin-right: 4px;
+  margin-right: 3px;
+  margin-left: 2px;
 }
 
 .catalog-item-rate {
@@ -889,7 +890,8 @@ a {
   color: #666666;
   width: 110px;
   text-align: center;
-  padding-bottom: 8px;
+  padding-bottom: 2px;
+  padding-top: 4px;
   background-color: #f2f2f2;
 }
 
@@ -897,7 +899,7 @@ a {
   line-height: 0;
   font-size: 0;
   color: transparent;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   text-align-last: end;
 }
 
@@ -1040,7 +1042,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   align-items: center;
 }
 
