@@ -960,6 +960,7 @@ a {
 
 .select-date input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .select-date input:focus {
@@ -1035,6 +1036,7 @@ a {
   text-align: center;
   background-color: #f2f2f2;
   cursor: pointer;
+  border: none;
 }
 
 .search-hotel-form input,
@@ -1046,7 +1048,6 @@ a {
   line-height: 26px;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  border: none;
   cursor: pointer;
   height: 36px;
 }
@@ -1057,6 +1058,7 @@ a {
   background-color: #f2f2f2;
   cursor: pointer;
   position: relative;
+  border: none;
 }
 
 .btn-minus {
