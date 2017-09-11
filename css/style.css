@@ -167,7 +167,6 @@ a {
   box-sizing: border-box;
   text-align: center;
   background-color: #81b3d2;
-  /*max-height: 256px;*/
 }
 
 .features-image {
@@ -180,6 +179,7 @@ a {
 
 .features-image img {
   position: absolute;
+  width: 100%;
   height: auto;
   top: -30%;
 }
@@ -193,15 +193,14 @@ a {
 }
 
 .features-item-gray .features-title {
-  padding-top: 47px;
-  padding-bottom: 21px;
+  padding: 47px 30% 21px;
 }
 
 .features-title {
   font-size: 21px;
   line-height: 21px;
   margin: 0;
-  padding: 40px 30% 25px;
+  padding: 40px 27% 25px;
 }
 
 .features-title-white {
@@ -479,13 +478,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 6% 16px;
+  padding: 0 6% 30px;
 }
 
 .hotel-filter-group {
   color: #ffffff;
   border: 0;
-  margin: 27px 119px 14px 0;
+  min-width: 24%;
+  margin: 27px 0 0;
   padding: 0;
 }
 
@@ -571,6 +571,8 @@ a {
 }
 
 .hotel-filter-cost {
+  min-width: 225px;
+  max-width: 320px;
   border: 0;
   color: #ffffff;
   margin: 27px 0 0;
@@ -697,7 +699,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 6%;
+  padding: 31px 6%;
   border-bottom: 1px solid #e5e5e5;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -883,6 +885,7 @@ a {
   display: inline-block;
   margin-right: 3px;
   margin-left: 2px;
+  vertical-align: baseline;
 }
 
 .catalog-item-rate {
@@ -1017,7 +1020,7 @@ a {
   padding-top: 0;
 }
 
-.number-wrapper .number:nth-child(1) label {
+.adult-label {
   margin-right: 14px;
 }
 
