@@ -172,16 +172,16 @@ a {
 .features-image {
   background-color: #81b3d2;
   width: 66.667%;
+  display: flex;
+  align-items: flex-start;
   padding: 0;
-  position: relative;
   overflow: hidden;
 }
 
 .features-image img {
-  position: absolute;
+  display: block;
   width: 100%;
   height: auto;
-  top: -78px;
 }
 
 .features-item-gray {
